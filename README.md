@@ -6,7 +6,7 @@ Two pretrained models are provided:
 1. non-senstive: includes ten digits (0-9) and 26 characters (a-z).
 2. sensitive: includes all readable digits.
    
-Pretrained models for 2 cases above can be downloaded [here](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
+Pretrained models can be downloaded [here](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
 
 Run demo: python demo.py --saved_model <path_to_saved_model> --sensitive --image_folder <path_to_image_folder>
 
