@@ -67,8 +67,8 @@ python3 test.py --eval_data data_lmdb_release/evaluation --saved_model scatter-c
 |:---------------------:|:----------:|:-------:|:-------:|:-------:|:----------------:|:-------:|:-------:|:-------:|:-------------------|
 |   In paper            |   93.7     |  92.7   |   96.3  |  93.9   |         94.0     |  82.2   |  86.9   |   87.5  |      83.7          |
 |   Baseline            |   87.9     |  87.5   |   94.9  |  92.3   |         89.8     |  71.8   |  79.2   |   74.0  |      73.6          |
-|   Our (sensitive)     |   93.467   |  90.881 |  95.040 |  93.596 |        93.435    |  78.575 | 83.411  |  83.333 |      80.066        |
-|   Our (non-sensitive) |   93.833   |  90.881 |  95.271 |  93.793 |        93.706    |  79.73  | 84.961  |  86.111 |      81.462        |    
+|   Our (sensitive)     |   93.5     |  90.9   |   95.0  |  93.6   |         93.4     |  78.6   |  83.4   |   83.3  |      80.0          |
+|   Our (non-sensitive) |   93.8     |  90.9   |   95.3  |  93.8   |         93.7     |  79.7   |  85.0   |   86.1  |      81.5          |    
 
 ## Acknowledgements
 This code is built upon [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). 
