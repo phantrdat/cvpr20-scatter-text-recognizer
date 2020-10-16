@@ -23,7 +23,7 @@ pip3 install lmdb pillow nltk natsort
 - validation datasets : the union of the training sets [IC13](http://rrc.cvc.uab.es/?ch=2)[4], [IC15](http://rrc.cvc.uab.es/?ch=4)[5], [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html)[6], and [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset)[7].\
 evaluation datasets : benchmark evaluation datasets, consist of [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html)[5], [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset)[7], [IC03](http://www.iapr-tc11.org/mediawiki/index.php/ICDAR_2003_Robust_Reading_Competitions)[8], [IC13](http://rrc.cvc.uab.es/?ch=2)[4], [IC15](http://rrc.cvc.uab.es/?ch=4)[5], [SVTP](http://openaccess.thecvf.com/content_iccv_2013/papers/Phan_Recognizing_Text_with_2013_ICCV_paper.pdf)[9], and [CUTE](http://cs-chan.com/downloads_CUTE80_dataset.html)[10].
 
-###Pretrained Model
+### Pretrained Model
 
 Two pretrained models are provided (Will be updated when better models are trained):
 1. non-senstive: includes ten digits (0-9) and 26 characters (a-z).
@@ -31,7 +31,7 @@ Two pretrained models are provided (Will be updated when better models are train
    
 Pretrained models can be downloaded [here](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
 
-###Run demo
+### Run demo
 - With non-sensitve model
 ```
 python demo.py --saved_model scatter-case-non-sensitive.pth --sensitive --image_folder <path_to_image_folder>
