@@ -57,7 +57,7 @@ python3 test.py --eval_data data_lmdb_release/evaluation --saved_model scatter-c
 
 ### Reported results
 
-- Using validation set [here](https://drive.google.com/drive/folders/192UfE9agQUMNq6AgU3_E05_FcPZK4hyt)
+- Using evaluation set [here](https://drive.google.com/drive/folders/192UfE9agQUMNq6AgU3_E05_FcPZK4hyt)
 
 - Compare with result in the original paper and baseline model.
 
