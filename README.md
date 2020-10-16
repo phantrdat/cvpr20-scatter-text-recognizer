@@ -19,9 +19,10 @@ pip3 install lmdb pillow nltk natsort
 
 ### Dataset
 - training dataset: [MJSynth (MJ)](http://www.robots.ox.ac.uk/~vgg/data/text/)[1], [SynthText (ST)](http://www.robots.ox.ac.uk/~vgg/data/scenetext/)[2] and 
-SynthAdd (SA)[3](https://drive.google.com/drive/folders/1agZ9ufDNYfzdQe1fGWH3dSk6L5BQU0o0?usp=sharing)
+[SynthAdd (SA)](https://drive.google.com/drive/folders/1agZ9ufDNYfzdQe1fGWH3dSk6L5BQU0o0?usp=sharing) [3]
 - validation datasets : the union of the training sets [IC13](http://rrc.cvc.uab.es/?ch=2)[4], [IC15](http://rrc.cvc.uab.es/?ch=4)[5], [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html)[6], and [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset)[7].\
 evaluation datasets : benchmark evaluation datasets, consist of [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html)[5], [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset)[7], [IC03](http://www.iapr-tc11.org/mediawiki/index.php/ICDAR_2003_Robust_Reading_Competitions)[8], [IC13](http://rrc.cvc.uab.es/?ch=2)[4], [IC15](http://rrc.cvc.uab.es/?ch=4)[5], [SVTP](http://openaccess.thecvf.com/content_iccv_2013/papers/Phan_Recognizing_Text_with_2013_ICCV_paper.pdf)[9], and [CUTE](http://cs-chan.com/downloads_CUTE80_dataset.html)[10].
+
 
 ###Pretrained Model
 
@@ -30,6 +31,7 @@ Two pretrained models are provided (Will be updated when better models are train
 2. sensitive: includes all readable digits.
    
 Pretrained models can be downloaded [here](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
+
 
 ###Run demo
 - With non-sensitve model
@@ -44,13 +46,17 @@ python demo.py --saved_model scatter-case-sensitive.pth --image_folder <path_to_
 
 ### Training and evaluation
 
+Training 
+```
+python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST-SA --batch_ratio 0.4-0.4-0.2 --sensitive 
+```
 
-python3 train.py \
---train_data data_lmdb_release/training --valid_data data_lmdb_release/validation \
---select_data MJ-ST-SA --batch_ratio 0.4-0.4-0.2 --sensitive \
+Testing
 
-python3 test.py \
---eval_data data_lmdb_release/evaluation --saved_model scatter-case-sensitive.pth --sensitive --data_filtering_off
+```
+python3 test.py --eval_data data_lmdb_release/evaluation --saved_model scatter-case-sensitive.pth --sensitive --data_filtering_off
+```
+
 
 ###Comparison
 
