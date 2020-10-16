@@ -23,7 +23,6 @@ pip3 install lmdb pillow nltk natsort
 - validation datasets : the union of the training sets [IC13](http://rrc.cvc.uab.es/?ch=2)[4], [IC15](http://rrc.cvc.uab.es/?ch=4)[5], [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html)[6], and [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset)[7].\
 evaluation datasets : benchmark evaluation datasets, consist of [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html)[5], [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset)[7], [IC03](http://www.iapr-tc11.org/mediawiki/index.php/ICDAR_2003_Robust_Reading_Competitions)[8], [IC13](http://rrc.cvc.uab.es/?ch=2)[4], [IC15](http://rrc.cvc.uab.es/?ch=4)[5], [SVTP](http://openaccess.thecvf.com/content_iccv_2013/papers/Phan_Recognizing_Text_with_2013_ICCV_paper.pdf)[9], and [CUTE](http://cs-chan.com/downloads_CUTE80_dataset.html)[10].
 
-
 ###Pretrained Model
 
 Two pretrained models are provided (Will be updated when better models are trained):
@@ -31,7 +30,6 @@ Two pretrained models are provided (Will be updated when better models are train
 2. sensitive: includes all readable digits.
    
 Pretrained models can be downloaded [here](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
-
 
 ###Run demo
 - With non-sensitve model
@@ -57,9 +55,7 @@ Testing
 python3 test.py --eval_data data_lmdb_release/evaluation --saved_model scatter-case-sensitive.pth --sensitive --data_filtering_off
 ```
 
-
 ###Comparison
-
 
 ## Acknowledgements
 This code is built upon [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). 
@@ -77,4 +73,14 @@ This code is built upon [deep-text-recognition-benchmark](https://github.com/clo
 [10] A. Risnumawan, P. Shivakumara, C. S. Chan, and C. L. Tan. A robust arbitrary text detection system for natural scene images. In ESWA, volume 41, pages 8027–8048, 2014. <br>
 [11] B. Shi, X. Bai, and C. Yao. An end-to-end trainable neural network for image-based sequence recognition and its application to scene text recognition. In TPAMI, volume 39, pages2298–2304. 2017. 
 
-(Will be updated..)
+## Citation
+Please consider citing this work in your publications if it helps your research.
+```
+@inproceedings{litman2020scatter,
+  title={SCATTER: selective context attentional scene text recognizer},
+  author={Litman, Ron and Anschel, Oron and Tsiper, Shahar and Litman, Roee and Mazor, Shai and Manmatha, R},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={11962--11972},
+  year={2020}
+}
+```
