@@ -44,6 +44,10 @@ python demo.py --saved_model scatter-case-sensitive.pth --image_folder <path_to_
 
 ### Training and evaluation
 
+Download lmdb dataset for traininig and evaluation provided by [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark) from [here](https://drive.google.com/drive/folders/192UfE9agQUMNq6AgU3_E05_FcPZK4hyt)
+
+Download addition dataset SynthText_Add (SA) for training from [here](https://drive.google.com/drive/u/1/folders/1agZ9ufDNYfzdQe1fGWH3dSk6L5BQU0o0) (includes raw images and lmdb format). 
+
 Training 
 ```
 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation --select_data MJ-ST-SA --batch_ratio 0.4-0.4-0.2 --sensitive 
