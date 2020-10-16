@@ -61,8 +61,6 @@ python3 test.py --eval_data data_lmdb_release/evaluation --saved_model scatter-c
 
 - Compare with result in the original paper and baseline model.
 
- SVTP: 83.411  CUTE80: 83.333  IC15_2077: 78.575
-
 |     Model             |   IIIT5K   |  SVT    |   IC03  |  IC13   | **Regular Text** |  IC15   |  SVTP   |  CUTE   | **Irregular Text** |
 |:---------------------:|:----------:|:-------:|:-------:|:-------:|:----------------:|:-------:|:-------:|:-------:|:-------------------|
 |   In paper            |   93.7     |  92.7   |   96.3  |  93.9   |         94.0     |  82.2   |  86.9   |   87.5  |      83.7          |
