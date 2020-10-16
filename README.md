@@ -27,7 +27,7 @@ evaluation datasets : benchmark evaluation datasets, consist of [IIIT](http://cv
 
 Two pretrained models are provided (Will be updated when better models are trained):
 1. non-senstive: includes ten digits (0-9) and 26 characters (a-z).
-2. sensitive: includes all readable digits.
+2. sensitive: includes all readable characters.
    
 Pretrained models can be downloaded [here](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
 
