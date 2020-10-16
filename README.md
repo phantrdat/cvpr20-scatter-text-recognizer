@@ -1,6 +1,6 @@
 # An implementation of CVPR 2020 paper "SCATTER: Selective Context Attentional Scene Text Recognizer"
 
-[Paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Litman_SCATTER_Selective_Context_Attentional_Scene_Text_Recognizer_CVPR_2020_paper.pdf)
+[Paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Litman_SCATTER_Selective_Context_Attentional_Scene_Text_Recognizer_CVPR_2020_paper.pdf) | [pretrained model](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
 
 ## Introduction
 This is an unofficial implementation of paper "SCATTER: Selective Context Attentional Scene Text Recognizer" published at CVPR 2020. 
@@ -55,7 +55,20 @@ Testing
 python3 test.py --eval_data data_lmdb_release/evaluation --saved_model scatter-case-sensitive.pth --sensitive --data_filtering_off
 ```
 
-###Comparison
+### Reported results
+
+- Using validation set [here](https://drive.google.com/drive/folders/192UfE9agQUMNq6AgU3_E05_FcPZK4hyt)
+
+- Compare with result in the original paper and baseline model.
+
+ SVTP: 83.411  CUTE80: 83.333  IC15_2077: 78.575
+
+|     Model             |   IIIT5K   |  SVT    |   IC03  |  IC13   | **Regular Text** |  IC15   |  SVTP   |  CUTE   | **Irregular Text** |
+|:---------------------:|:----------:|:-------:|:-------:|:-------:|:----------------:|:-------:|:-------:|:-------:|:-------------------|
+|   In paper            |   93.7     |  92.7   |   96.3  |  93.9   |         94.0     |  82.2   |  86.9   |   87.5  |      83.7          |
+|   Baseline            |   87.9     |  87.5   |   94.9  |  92.3   |         89.8     |  71.8   |  79.2   |   74.0  |      73.6          |
+|   Our (sensitive)     |   93.467   |  90.881 |  95.040 |  93.596 |        93.435    |  78.575 | 83.411  |  83.333 |      80.066        |
+|   Our (non-sensitive) |   93.833   |  90.881 |  95.271 |  93.793 |        93.706    |  79.73  | 84.961  |  86.111 |      81.462        |    
 
 ## Acknowledgements
 This code is built upon [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). 
