@@ -19,7 +19,7 @@ pip3 install lmdb pillow nltk natsort
 
 ### Dataset
 - training dataset: [MJSynth (MJ)](http://www.robots.ox.ac.uk/~vgg/data/text/)[1], [SynthText (ST)](http://www.robots.ox.ac.uk/~vgg/data/scenetext/)[2] and 
-[SynthAdd (SA)](https://drive.google.com/drive/folders/1agZ9ufDNYfzdQe1fGWH3dSk6L5BQU0o0?usp=sharing) [3]
+[SynthAdd (SA)](https://arxiv.org/pdf/1811.00751.pdf) [3]
 - validation datasets : the union of the training sets [IC13](http://rrc.cvc.uab.es/?ch=2)[4], [IC15](http://rrc.cvc.uab.es/?ch=4)[5], [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html)[6], and [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset)[7].\
 evaluation datasets : benchmark evaluation datasets, consist of [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html)[5], [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset)[7], [IC03](http://www.iapr-tc11.org/mediawiki/index.php/ICDAR_2003_Robust_Reading_Competitions)[8], [IC13](http://rrc.cvc.uab.es/?ch=2)[4], [IC15](http://rrc.cvc.uab.es/?ch=4)[5], [SVTP](http://openaccess.thecvf.com/content_iccv_2013/papers/Phan_Recognizing_Text_with_2013_ICCV_paper.pdf)[9], and [CUTE](http://cs-chan.com/downloads_CUTE80_dataset.html)[10].
 
