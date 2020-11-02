@@ -1,6 +1,6 @@
 # An implementation of CVPR 2020 paper "SCATTER: Selective Context Attentional Scene Text Recognizer"
 
-[Paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Litman_SCATTER_Selective_Context_Attentional_Scene_Text_Recognizer_CVPR_2020_paper.pdf) | [pretrained model](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
+[Paper](https://openaccess.thecvf.com/content_CVPR_2020/papers/Litman_SCATTER_Selective_Context_Attentional_Scene_Text_Recognizer_CVPR_2020_paper.pdf) | [Pretrained model](https://drive.google.com/drive/folders/1niuPM6otpSQFSai8Ft2bO0lhdqEjE96Z?usp=sharing)
 
 ## Introduction
 This is an unofficial implementation of paper "SCATTER: Selective Context Attentional Scene Text Recognizer" published at CVPR 2020. 
