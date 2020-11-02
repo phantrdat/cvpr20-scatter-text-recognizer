@@ -67,10 +67,10 @@ python3 test.py --eval_data data_lmdb_release/evaluation --saved_model scatter-c
 
 |     Model             |   IIIT5K   |  SVT    |   IC03  |  IC13   | **Regular Text** |  IC15   |  SVTP   |  CUTE   | **Irregular Text** |
 |:---------------------:|:----------:|:-------:|:-------:|:-------:|:----------------:|:-------:|:-------:|:-------:|:------------------:|
-|   In paper            |   93.7     |  92.7   |   96.3  |  93.9   |         94.0     |  82.2   |  86.9   |   87.5  |      83.7          |
-|   Baseline            |   87.9     |  87.5   |   94.9  |  92.3   |         89.8     |  71.8   |  79.2   |   74.0  |      73.6          |
-|   Our (sensitive)     |   93.5     |  90.9   |   95.0  |  93.6   |         93.4     |  78.6   |  83.4   |   83.3  |      80.0          |
-|   Our (non-sensitive) |   93.8     |  90.9   |   95.3  |  93.8   |         93.7     |  79.7   |  85.0   |   86.1  |      81.5          |    
+|  Paper (non-sensitive)|   93.7     |  92.7   |   96.3  |  93.9   |         94.0     |  82.2   |  86.9   |   87.5  |      83.7          |
+|  Baseline             |   87.9     |  87.5   |   94.9  |  92.3   |         89.8     |  71.8   |  79.2   |   74.0  |      73.6          |
+|  Our (sensitive)      |   93.5     |  90.9   |   95.0  |  93.6   |         93.4     |  78.6   |  83.4   |   83.3  |      80.0          |
+|  Our (non-sensitive)  |   93.8     |  90.9   |   95.3  |  93.8   |         93.7     |  79.7   |  85.0   |   86.1  |      81.5          |    
 
 ## Acknowledgements
 This code is built upon [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). 
