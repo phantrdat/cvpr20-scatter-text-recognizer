@@ -34,12 +34,12 @@ Pretrained models can be downloaded [here](https://drive.google.com/drive/folder
 ### Run demo
 - With non-sensitve model
 ```
-python demo.py --saved_model scatter-case-non-sensitive.pth --sensitive --image_folder <path_to_image_folder>
+python demo.py --saved_model scatter-case-non-sensitive.pth --image_folder <path_to_image_folder>
 ```
 
 - With sensitve model
 ```
-python demo.py --saved_model scatter-case-sensitive.pth --image_folder <path_to_image_folder>
+python demo.py --saved_model scatter-case-sensitive.pth --sensitive --image_folder <path_to_image_folder>
 ```
 
 ### Training and evaluation
